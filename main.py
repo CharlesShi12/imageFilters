@@ -1,6 +1,5 @@
-from image_utils import *
+from image import *
 from k_means import *
-# Charles Shi CSCI 1913: Daniel Kluver
 
 if __name__ == "__main__":
     file = input("Image file: ")
