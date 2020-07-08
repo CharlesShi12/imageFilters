@@ -13,10 +13,3 @@ if __name__ == "__main__":
         for j in range(0, height):
             new_image[i][j] = means[labels[i][j]]
     save_ppm(output_file + '.ppm', new_image)
-
-
-
-
-
-
-
