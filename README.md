@@ -2,6 +2,7 @@
 A Python project that uses machine learning, specifically the k-means algorithm, to filter images reducing it down to a few core colors.
 
 #### To dupulicate and/or interact with this project:
+Run this command in your terminal:
 ```
 git clone https://github.com/CharlesShi12/ImageFilters.git
 ```
