@@ -9,7 +9,7 @@ Video demonstration of this algorithm is linked here: https://youtu.be/hubdoUQ0Q
 
 ## Tech/Framework used
 Built with 
-* Java
+* Python
 
 ## Features
 * Reduces an image down to a few core colors
