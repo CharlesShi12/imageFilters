@@ -5,12 +5,7 @@ import random
 BLACK = (0, 0, 0)
 
 def read_ppm(filename):
-    """
-    Reads an image saved in ppm format (specifically, "plain" ppm format P3)
-    :param filename: the name of the ppm file to load
-    :return: a list-of-lists representing the image. The list-of-lists will be width x height, and each element will be
-             a 3-tuple representing the color of the image as a red / green / blue value.
-    """
+    # Reads an image saved in ppm format (specifically, "plain" ppm format P3)
     f = open(filename, "r")
     file = f.read().split()
     f.close()
@@ -38,28 +33,20 @@ def read_ppm(filename):
 
 
 def get_width_height(image):
-    """ Returns a tuple (width, height) indicating the width and height of the image."""
+    # Returns a tuple (width, height) indicating the width and height of the image.
     width = len(image)
     height = len(image[0])
     return width, height
 
 
 def random_color():
-    """Returns a random color as a 3-tuple representing the red, green, and blue values.
-       Each color component will be between 0 and 255"""
+    # Returns a random color as a 3-tuple representing the red, green, and blue values.
+    # Each color component will be between 0 and 255
     return (random.randrange(256), random.randrange(256), random.randrange(256))
 
 
 def save_ppm(filename, image):
-    """
-    Writes an image in ppm format (specifically "plain" ppm format P3)
-    :param filename: The filename to save to
-    :param image: The image data, should be a width x height list-of-lists with each element
-                being a 3-tuple of red,green,blue values each of which should be between 0 and 255.
-    :return: Nothing.
-    """
-    # Provided, open the file and write the first few lines, as these are required
-    # Note, the syntax for writing to a file is a little different than print.
+    # Writes an image in ppm format (specifically "plain" ppm format P3)
     out_file = open(filename, "w")
     print("P3", file=out_file)
 
